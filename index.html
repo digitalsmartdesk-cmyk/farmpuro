@@ -50,7 +50,7 @@
   .ornament .line{width:32px;height:1px;background:currentColor}
 
   /* PRODUCTS */
-  .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
   .product{background:#fff;border:1px solid var(--rule);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s, box-shadow .25s;position:relative}
   .product:hover{transform:translateY(-4px);box-shadow:0 18px 40px -16px rgba(31,26,20,.18)}
   .product .pic{position:relative;aspect-ratio:1/1.05;background:var(--cream-warm);overflow:hidden}
@@ -285,7 +285,7 @@
     </div>
     <div class="hero-visual">
       <div class="hero-badge"><div><strong>₹100</strong>off your first order</div></div>
-      <div class="hero-jar"><img src="assets/coriander-mint.jpg" alt="Coriander Mint Chutney" /></div>
+      <div class="hero-jar"><img src="assets/tamarind-date.jpg" alt="Jar of Farm Puro Tamarind Date Chutney, made fresh without preservatives" /></div>
     </div>
   </div>
 
@@ -334,101 +334,200 @@
   </div>
 </section>
 
-<!-- ====================== FEATURED PRODUCTS ====================== -->
-<section class="pad" data-screen-label="Featured Products">
+<!-- ====================== ALL PRODUCTS ====================== -->
+<section id="shop" class="pad" data-screen-label="Shop All Chutneys" style="background:var(--cream-warm)">
   <div class="wrap">
     <div class="section-head">
-      <div class="ornament"><span class="line"></span><span class="eyebrow">Bestsellers</span><span class="line"></span></div>
-      <h2>Our most-loved chutneys</h2>
-      <p>Nine regional recipes, stone-ground in small batches and made to order. Here are four to begin your jar collection.</p>
+      <div class="ornament"><span class="line"></span><span class="eyebrow">Nine Jars, Nine Regions</span><span class="line"></span></div>
+      <h2>Shop All Chutneys</h2>
+      <p>Stone-ground in small batches, made to order. Each recipe traces back to a specific Indian region and tradition.</p>
     </div>
 
     <div class="product-grid">
-      <!-- Card 1 -->
+      <!-- 01 Tamarind Date — real photo -->
       <article class="product">
-        <a href="shop.html" class="pic">
-          <span class="tag">Bestseller</span>
+        <a href="product.html?id=tamarind-date" class="pic">
+          <span class="tag">Sweet</span>
           <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
           </button>
-          <img src="assets/coriander-mint.jpg" alt="Coriander Mint Chutney" />
+          <img src="assets/tamarind-date.jpg" alt="Jar of Farm Puro Tamarind Date Chutney" />
         </a>
         <div class="body">
-          <div class="region">Cooling</div>
-          <h3>Coriander Mint Chutney</h3>
-          <p class="desc">Bright, herby and instantly refreshing — ground same-day with a whisper of lime.</p>
-          <div class="stars">★★★★★ <span>(412)</span></div>
-          <div class="row">
-            <div class="price"><span class="now">₹249</span><span class="was">₹299</span></div>
-            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="product">
-        <a href="shop.html" class="pic">
-          <span class="tag">Bestseller</span>
-          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
-          </button>
-          <img src="assets/tamarind-date.jpg" alt="Tamarind Date Chutney" />
-        </a>
-        <div class="body">
-          <div class="region">Sweet</div>
+          <div class="region">01 · Sweet</div>
           <h3>Tamarind Date Chutney</h3>
-          <p class="desc">Thick, dark, deeply sweet-tangy — the one that makes everything taste like a celebration.</p>
+          <p class="desc">The one that makes everything taste like a celebration. Sun-dried tamarind, Medjool dates.</p>
           <div class="stars">★★★★★ <span>(389)</span></div>
           <div class="row">
-            <div class="price"><span class="now">₹279</span><span class="was">₹329</span></div>
+            <div class="price"><span class="now">₹279</span></div>
             <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
           </div>
         </div>
       </article>
 
-      <!-- Card 3 -->
+      <!-- 02 Coconut -->
       <article class="product">
-        <a href="shop.html" class="pic">
+        <a href="product.html?id=coconut" class="pic">
           <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
           </button>
           <img src="assets/coconut.jpg" alt="Coconut Chutney" />
         </a>
         <div class="body">
-          <div class="region">Light</div>
+          <div class="region">02 · Light</div>
           <h3>Coconut Chutney</h3>
-          <p class="desc">Cool, coastal, fresh-scraped — South Indian breakfast in a spoon, tempered with curry leaves.</p>
+          <p class="desc">Cool, coastal, and ready in seconds. Fresh-scraped coconut with mustard-curry leaf tadka.</p>
           <div class="stars">★★★★☆ <span>(256)</span></div>
           <div class="row">
-            <div class="price"><span class="now">₹229</span><span class="was">₹269</span></div>
+            <div class="price"><span class="now">₹229</span></div>
             <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
           </div>
         </div>
       </article>
 
-      <!-- Card 4 -->
+      <!-- 03 Garlic Red -->
       <article class="product">
-        <a href="shop.html" class="pic">
-          <span class="tag chilli">Hot</span>
+        <a href="product.html?id=garlic-red" class="pic">
+          <span class="tag chilli">Bold</span>
           <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
           </button>
           <img src="assets/garlic-red.jpg" alt="Garlic Red Chutney" />
         </a>
         <div class="body">
-          <div class="region">Bold</div>
+          <div class="region">03 · Bold</div>
           <h3>Garlic Red Chutney</h3>
-          <p class="desc">The loudest jar on the table — and the first empty. Stone-ground Kashmiri chillies and garlic.</p>
+          <p class="desc">The loudest jar on the table — and the first empty. Whole Kashmiri chillies, stone-ground.</p>
           <div class="stars">★★★★★ <span>(508)</span></div>
           <div class="row">
-            <div class="price"><span class="now">₹259</span><span class="was">₹299</span></div>
+            <div class="price"><span class="now">₹259</span></div>
+            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 Coriander Mint — real photo -->
+      <article class="product">
+        <a href="product.html?id=coriander-mint" class="pic">
+          <span class="tag">Bestseller</span>
+          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <img src="assets/coriander-mint.jpg" alt="Jar of Farm Puro Coriander Mint Chutney with fresh coriander and mint leaves" />
+        </a>
+        <div class="body">
+          <div class="region">04 · Cooling</div>
+          <h3>Coriander Mint Chutney</h3>
+          <p class="desc">Bright, herby, and instantly refreshing. Garden-fresh coriander, ground same-day.</p>
+          <div class="stars">★★★★★ <span>(412)</span></div>
+          <div class="row">
+            <div class="price"><span class="now">₹249</span></div>
+            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 Ginger-Garlic Paste -->
+      <article class="product">
+        <a href="product.html?id=ginger-garlic" class="pic">
+          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <img src="assets/ginger-garlic.jpg" alt="Ginger-Garlic Paste" />
+        </a>
+        <div class="body">
+          <div class="region">05 · Staple</div>
+          <h3>Ginger-Garlic Paste</h3>
+          <p class="desc">The base of every great Indian dish — no vinegar, no filler, fresh-pressed 40:60 ratio.</p>
+          <div class="stars">★★★★★ <span>(321)</span></div>
+          <div class="row">
+            <div class="price"><span class="now">₹199</span></div>
+            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 Tomato Onion -->
+      <article class="product">
+        <a href="product.html?id=tomato-onion" class="pic">
+          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <img src="assets/tomato-onion.jpg" alt="Tomato Onion Chutney" />
+        </a>
+        <div class="body">
+          <div class="region">06 · Everyday</div>
+          <h3>Tomato Onion Chutney</h3>
+          <p class="desc">Goes with absolutely everything. Slow-cooked until jammy, slightly smoky, always perfect.</p>
+          <div class="stars">★★★★★ <span>(287)</span></div>
+          <div class="row">
+            <div class="price"><span class="now">₹239</span></div>
+            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 Curry Leaf -->
+      <article class="product">
+        <a href="product.html?id=curry-leaf" class="pic">
+          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <img src="assets/curry-leaf.jpg" alt="Curry Leaf Chutney" />
+        </a>
+        <div class="body">
+          <div class="region">07 · Aromatic</div>
+          <h3>Curry Leaf Chutney</h3>
+          <p class="desc">The underrated hero of South Indian cooking. Dark olive-green, earthy, deeply aromatic.</p>
+          <div class="stars">★★★★★ <span>(198)</span></div>
+          <div class="row">
+            <div class="price"><span class="now">₹249</span></div>
+            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 08 Green Chilli Thecha — real photo -->
+      <article class="product">
+        <a href="product.html?id=green-chilli-thecha" class="pic">
+          <span class="tag chilli">Fiery</span>
+          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <img src="assets/green-chilli-thecha.jpg" alt="Jar of Farm Puro Green Chilli Thecha, stone-pounded with peanuts and garlic" />
+        </a>
+        <div class="body">
+          <div class="region">08 · Fiery</div>
+          <h3>Green Chilli Thecha</h3>
+          <p class="desc">Maharashtrian fire, pounded not ground. Coarse, chunky, fiercely hot — a statement in a jar.</p>
+          <div class="stars">★★★★★ <span>(344)</span></div>
+          <div class="row">
+            <div class="price"><span class="now">₹269</span></div>
+            <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 09 Peanut Garlic -->
+      <article class="product">
+        <a href="product.html?id=peanut-garlic" class="pic">
+          <button class="heart" aria-label="Save" onclick="event.stopPropagation();event.preventDefault()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <img src="assets/peanut-garlic.jpg" alt="Peanut Garlic Chutney" />
+        </a>
+        <div class="body">
+          <div class="region">09 · Dry</div>
+          <h3>Peanut Garlic Chutney</h3>
+          <p class="desc">Dry, nutty, dangerously addictive. Dry-roasted Vidarbha peanuts, coarsely ground.</p>
+          <div class="stars">★★★★★ <span>(276)</span></div>
+          <div class="row">
+            <div class="price"><span class="now">₹199</span></div>
             <button class="add" onclick="addToCartEffect(this)">Add to Cart →</button>
           </div>
         </div>
       </article>
     </div>
-
-    <div class="view-all"><a href="shop.html">View all 9 chutneys →</a></div>
   </div>
 </section>
 
@@ -436,9 +535,9 @@
 <section class="pad story" id="story" data-screen-label="Brand Story">
   <div class="wrap story-grid">
     <div class="story-img">
-      <img src="assets/story.jpg" alt="Hand-ground curry leaf chutney with stone mortar" />
+      <img src="assets/coriander-mint.jpg" alt="Jar of Farm Puro Coriander Mint Chutney with fresh coriander and mint leaves" />
       <div class="story-stamp">
-        <div><div class="yr">9</div><div class="lbl">Regional recipes</div></div>
+        <div><div class="yr">30</div><div class="lbl">day shelf life</div></div>
       </div>
     </div>
     <div class="story-content">
